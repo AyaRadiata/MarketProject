@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>              
+    <link rel="stylesheet" href="style.css">
+    <script defer src="signup.js"></script>
+    <link rel="icon" type="image/x-icon" href="media/icon.png">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body id="signup_body">
+    <div id="signup_con">
+        <div id="signup_header">
+            Sign Up
+        </div>
+        <form id="RegIn_Form" action="" method="POST" onsubmit="return verify()">
+
+            <label for="userEmail"><b>Email</b></label>
+            <input name="mail" type="email" id="userEmail" class="LogIn_input" placeholder="@" data-is-valid="">
+            <div class="log_after_text" id="log_after_text_mail" data-after-text="invis">Your login must include @ symbol</div>
+            
+            <label for="userPassword"><b>Password</b></label>
+            <input name="pass" type="password" id="userPassword" class="LogIn_input" placeholder="*****">
+            <div class="log_after_text" id="log_after_text_password" data-after-text="invis">Weak Password <div id="passTip"><ion-icon name="help-circle-outline"></ion-icon></div></div>
+
+            <label for="userPassword"><b>Repat Password</b></label>
+            <input name="pass1" type="password" id="userPassword1" class="LogIn_input" placeholder="*****">
+
+            <input type="submit" class="button bb" value="Sign In">
+
+            <a href="index.html">Back to Home</a>
+        </form>
+    </div>
+</body>
+</html>
